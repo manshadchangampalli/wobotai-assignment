@@ -22,8 +22,7 @@ boxs.forEach((item)=>{
 
 setTimeout(()=>{
     popup.style.display="grid"
-
-},5000)
+},3000)
 
 const closeButtonClicked = () =>{
     popup.style.display="none"
