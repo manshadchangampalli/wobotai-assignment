@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Roboto:wght@300;400;700&display=swap");
+body {
+  overflow-y: scroll;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +44,7 @@
       grid-template-rows: repeat(7, 1fr);
 }
 
-.container .box svg {
+.container .box img {
   place-self: center;
 }
 
@@ -187,7 +191,7 @@
 }
 
 .arrow-up {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 0;
@@ -250,5 +254,30 @@
   border-right: 0px solid transparent;
   opacity: 20%;
   border-bottom: 80vh solid #3766e8;
+}
+
+@media only screen and (max-width: 768px) {
+  .container .box {
+    overflow: scroll;
+    margin-top: 100px;
+    width: 90vw;
+    max-width: 540px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1.5fr 1fr;
+    height: auto;
+  }
+  .container .box img {
+    width: 50px;
+  }
+  .container .box .cmpny-size {
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
+  }
+  .container .box .cmpny-size .items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=Style.css.map */
