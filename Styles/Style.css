@@ -279,6 +279,24 @@
   display: none;
 }
 
+.mydesign .close-mydesign {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 99999;
+  cursor: pointer;
+  background: white;
+  color: #8a0000;
+  width: 50px;
+  font-size: 30px;
+  border-radius: 50%;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 .mydesign .main-box {
   width: 90vw;
   display: -ms-grid;

@@ -262,7 +262,22 @@ body{
     place-items: center;
     height: 100vh;
     display: none;
-    
+    .close-mydesign{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 99999;
+        cursor: pointer;
+        background: white;
+        color: rgb(138, 0, 0);
+        width: 50px;
+        font-size: 30px;
+        border-radius: 50%;
+        height: 50px;
+        font-family: $Roboto;
+        display: grid;
+        place-items: center;
+    }
     .main-box{
         width: 90vw;
         display: grid;

@@ -1,5 +1,8 @@
 const box = document.querySelectorAll(".boxs")
 const boxs = document.querySelectorAll(".boxss")
+const popup = document.querySelector(".popup")
+const myDesign = document.querySelector(".mydesign")
+const mainDesign = document.querySelector(".container")
 
 box.forEach((item)=>{
     item.addEventListener("click",(e)=>{
@@ -18,13 +21,19 @@ boxs.forEach((item)=>{
 
 
 setTimeout(()=>{
-    document.querySelector(".popup").style.display="grid"
+    popup.style.display="grid"
 
-},3000)
+},5000)
 
 const closeButtonClicked = () =>{
-    document.querySelector(".popup").style.display="none"
+    popup.style.display="none"
 }
 const viewButtonClicked = () =>{
-    
+    mainDesign.style.display="none"
+    myDesign.style.display="grid"
+}
+const mydesignClose = ()=>{
+    popup.style.display="none"
+    myDesign.style.display="none"
+    mainDesign.style.display="grid"
 }
