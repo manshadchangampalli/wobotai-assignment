@@ -30,9 +30,9 @@ const closeButtonClicked = () =>{
 const viewButtonClicked = () =>{
     mainDesign.style.display="none"
     myDesign.style.display="grid"
+    popup.style.display="none"
 }
 const mydesignClose = ()=>{
-    popup.style.display="none"
     myDesign.style.display="none"
     mainDesign.style.display="grid"
 }
